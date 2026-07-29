@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cucina Aperta - corsi di cucina a Firenze</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="testata">
+  <div class="contenitore">
+    <div class="logo-cucina">Cucina<span>Aperta</span></div>
+    <ul>
+      <li><a href="#corsi">Corsi</a></li>
+      <li><a href="#calendario">Calendario</a></li>
+      <li><a href="#domande">Domande</a></li>
+      <li><a href="#prenota">Prenota</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="vetrina">
+  <div class="scorrevole" id="scorrevole">
+    <div class="lastra l1"><h1>Corsi di cucina<br>a Firenze</h1></div>
+    <div class="lastra l2"><h1>Pasta fresca<br>ogni sabato</h1></div>
+    <div class="lastra l3"><h1>Serate a tema<br>per gruppi</h1></div>
+  </div>
+  <div class="frecce">
+    <button onclick="indietro()">&#8249;</button>
+    <button onclick="avanti()">&#8250;</button>
+  </div>
+</div>
+
+<section id="corsi">
+  <div class="contenitore">
+    <h2>I corsi</h2>
+    <p class="occhio">Massimo dodici persone per corso, grembiule e ingredienti compresi.</p>
+
+    <div class="mattonelle">
+      <article class="mattonella">
+        <div class="testa t1">3 ore</div>
+        <h3>Pasta fresca all'uovo</h3>
+        <p>Sfoglia tirata a mano, tagliatelle, tortellini e ravioli. Si porta a casa quello che si prepara.</p>
+        <div class="piede"><span>65&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+
+      <article class="mattonella">
+        <div class="testa t2">4 ore</div>
+        <h3>Pane e lievitati</h3>
+        <p>Lievito madre, impasti a lunga maturazione, focaccia e pane in cassetta. Si parte dalla farina.</p>
+        <div class="piede"><span>80&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+
+      <article class="mattonella">
+        <div class="testa t3">3 ore</div>
+        <h3>Dolci al cucchiaio</h3>
+        <p>Creme, bavaresi, tiramis&ugrave; e panna cotta. Corso adatto anche a chi non ha mai cucinato.</p>
+        <div class="piede"><span>60&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+
+      <article class="mattonella">
+        <div class="testa t4">5 ore</div>
+        <h3>Cucina toscana</h3>
+        <p>Ribollita, peposo, pappa al pomodoro e schiacciata. Pranzo finale insieme, vino compreso.</p>
+        <div class="piede"><span>95&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+
+      <article class="mattonella">
+        <div class="testa t5">3 ore</div>
+        <h3>Cucina vegetariana</h3>
+        <p>Verdure di stagione, legumi e cereali. Ricette complete, non contorni.</p>
+        <div class="piede"><span>60&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+
+      <article class="mattonella">
+        <div class="testa t6">2 ore</div>
+        <h3>Corso per bambini</h3>
+        <p>Dagli 8 ai 12 anni. Pizza, biscotti e piccoli dolci, sabato mattina.</p>
+        <div class="piede"><span>35&euro;</span><a href="#prenota">Prenota</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="calendario" class="fondo-crema">
+  <div class="contenitore">
+    <h2>Prossime date</h2>
+    <table class="date">
+      <thead>
+        <tr><th>Data</th><th>Corso</th><th>Orario</th><th>Posti</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>14 marzo</td><td>Pasta fresca all'uovo</td><td>10:00 - 13:00</td><td>4 liberi</td></tr>
+        <tr><td>15 marzo</td><td>Corso per bambini</td><td>10:00 - 12:00</td><td>7 liberi</td></tr>
+        <tr><td>18 marzo</td><td>Pane e lievitati</td><td>18:00 - 22:00</td><td>esaurito</td></tr>
+        <tr><td>21 marzo</td><td>Cucina toscana</td><td>10:00 - 15:00</td><td>2 liberi</td></tr>
+        <tr><td>25 marzo</td><td>Dolci al cucchiaio</td><td>18:30 - 21:30</td><td>9 liberi</td></tr>
+        <tr><td>28 marzo</td><td>Cucina vegetariana</td><td>18:30 - 21:30</td><td>6 liberi</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="domande">
+  <div class="contenitore stretto">
+    <h2>Domande frequenti</h2>
+
+    <div class="fisarmonica">
+      <div class="voce-fisarmonica">
+        <div class="titolo-voce" onclick="apri(0)">Serve esperienza in cucina?</div>
+        <div class="corpo-voce">No. I corsi partono dalle basi e ogni postazione ha il suo piano di lavoro.</div>
+      </div>
+      <div class="voce-fisarmonica">
+        <div class="titolo-voce" onclick="apri(1)">Cosa devo portare?</div>
+        <div class="corpo-voce">Niente. Grembiule, strumenti e ingredienti sono compresi nel prezzo.</div>
+      </div>
+      <div class="voce-fisarmonica">
+        <div class="titolo-voce" onclick="apri(2)">Posso disdire?</div>
+        <div class="corpo-voce">Fino a tre giorni prima, con rimborso completo. Dopo, il posto si pu&ograve; cedere a un'altra persona.</div>
+      </div>
+      <div class="voce-fisarmonica">
+        <div class="titolo-voce" onclick="apri(3)">Ci sono corsi privati?</div>
+        <div class="corpo-voce">S&igrave;, per gruppi da sei persone in su, anche in date diverse da quelle in calendario.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="fondo-scuro">
+  <div class="contenitore stretto">
+    <h2>Prenota un posto</h2>
+    <form id="prenotazione">
+      <input type="text" id="p_nome" placeholder="Nome e cognome">
+      <input type="text" id="p_mail" placeholder="Email">
+      <input type="text" id="p_tel" placeholder="Telefono">
+      <select id="p_corso">
+        <option>Pasta fresca all'uovo</option>
+        <option>Pane e lievitati</option>
+        <option>Dolci al cucchiaio</option>
+        <option>Cucina toscana</option>
+        <option>Cucina vegetariana</option>
+        <option>Corso per bambini</option>
+      </select>
+      <input type="text" id="p_data" placeholder="Data scelta, per esempio 14 marzo">
+      <input type="text" id="p_persone" placeholder="Quante persone">
+      <button type="submit">Invia la prenotazione</button>
+    </form>
+    <p id="conferma"></p>
+  </div>
+</section>
+
+<footer>
+  <div class="contenitore">
+    <p>Cucina Aperta - Borgo Pinti 30, 50121 Firenze - 055 998877 - ciao@cucinaaperta.it</p>
+    <p class="piccolo">P.IVA 05566778899</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
